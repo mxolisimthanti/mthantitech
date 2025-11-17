@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!--  <title>Mthanti Tech Solutions</title> -->
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+  <body>
+    <div id="chatbot-container">
+        </div>
+
+    <script src="script.js"></script>
+</body>
+  <script>
+  function toggleMenu() {
+    const menu = document.getElementById('mobileMenu');
+    menu.classList.toggle('show');
+  }
+</script>
+
+<body>
+  <header>
+     <div class="header-content">
+    <div class="logo">
+      <img src="logo.png" />
+    <!--  <h1>MTHANTI TECH SOLUTIONS</h1> -->
+       <!-- Hamburger Button 
+<div class="hamburger" onclick="toggleMenu()">
+  &#9776; <!-- Unicode for ☰ -->
+<!--</div>
+</div>
+    <nav>
+      <nav class="main-nav" id="mobileMenu">
+     <ul class="menu">
+      <ul>
+        <li><a href="#landing">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Earntrepreneurs</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+        
+      </ul>
+        </ul>
+</nav>
+    </nav> -->
+
+    
+  <!-- Hamburger Button 
+  <div class="hamburger" onclick="toggleMenu()">
+    &#9776;
+  </div> -->
+      
+      <!-- Hamburger Button with SVG 
+<div class="hamburger" onclick="toggleMenu()">
+  <svg width="32" height="32" viewBox="0 0 100 80" fill="#0073e6" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100" height="10"></rect>
+    <rect y="30" width="100" height="10"></rect>
+    <rect y="60" width="100" height="10"></rect>
+  </svg>
+</div>
+
+
+  <!-- Navigation Menu
+  <nav class="main-nav" id="mobileMenu">
+    <ul class="menu">
+      <li><a href="#landing">Home</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#earntrepreneurs">Earntrepreneurs</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    </nav -->
+
+    <!-- Mobile Navigation (hidden on desktop) 
+<nav class="mobile-nav" id="mobileMenu">
+  <ul class="menu">
+    <li><a href="#landing">Home</a></li>
+    <li><a href="#about">About Us</a></li>
+    <li><a href="#earntrepreneurs">Earntrepreneurs</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav> --->
+
+<!-- Desktop Navigation -->
+<nav class="desktop-nav">
+  
+  <ul class="menu">
+    <li><a href="#landing">Home</a></li>
+    <li><a href="#about">About Us</a></li>
+    <li><a href="#earntrepreneurs">Earntrepreneurs</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+      </div>
+
+<!-- Hamburger Button (Mobile Only) -->
+<div class="hamburger" onclick="toggleMenu()">
+  <svg width="32" height="32" viewBox="0 0 100 80" fill="#0073e6">
+    <rect width="100" height="10"></rect>
+    <rect y="30" width="100" height="10"></rect>
+    <rect y="60" width="100" height="10"></rect>
+  </svg>
+</div>
+
+<!-- Mobile Navigation -->
+<nav class="mobile-nav" id="mobileMenu">
+  <ul class="mobile-menu">
+    <li><a href="#landing">Home</a></li>
+    <li><a href="#about">About Us</a></li>
+    <li><a href="#earntrepreneurs">Earntrepreneurs</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+
+
+
+
+   
+
+
+<div class="social-icons">
+  <a href="https://www.facebook.com/yourpage" target="_blank" class="icon facebook" aria-label="Facebook">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+  <a href="https://www.instagram.com/yourprofile" target="_blank" class="icon instagram" aria-label="Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+  <a href="https://youtube.com/@mxolisi_mthanti?si=0vk7xPUw0K1yfOjd" target="_blank" class="icon youtube" aria-label="YouTube">
+    <i class="fab fa-youtube"></i>
+  </a>
+  <a href="https://www.tiktok.com/@yourhandle" target="_blank" class="icon tiktok" aria-label="TikTok">
+    <i class="fab fa-tiktok"></i>
+  </a>
+</div>
+ <!--  <header class="site-header">
+  <div class="nav-container">
+    <nav class="main-nav">
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="social-icons">
+        <a href="https://www.facebook.com/yourpage" target="_blank" class="icon facebook" aria-label="Facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/yourprofile" target="_blank" class="icon instagram" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.youtube.com/yourchannel" target="_blank" class="icon youtube" aria-label="YouTube">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://github.com/yourprofile" target="_blank" class="icon github" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </nav>
+  </div>
+</header>
+ -->
+
+
+  </header>
+
+ <!--  <section id="landing" class="landing">
+    <h2>Innovate. Integrate. Elevate.</h2>
+    <p>Empowering South African businesses with smart tech and startup solutions.</p>
+    <a href="#services" class="btn">Explore Services</a>
+  </section> -->
+<section class="hero-video">
+  <div class="video-background">
+    <iframe
+      src="https://www.youtube.com/embed/kquJsibd87c?autoplay=1&mute=1&controls=0&showinfo=0&loop=1&playlist=kquJsibd87c&start=45"
+      frameborder="0"
+      allow="autoplay; encrypted-media"
+      allowfullscreen
+    ></iframe>
+  </div>
+  <div class="overlay"></div>
+  <div class="hero-content">
+    <h1>Innovate. Integrate. Elevate.</h1>
+    <p>Empowering South African businesses with smart tech and startup solutions.</p>
+  <!--  <a href="#services" class="btn">Explore Services</a> -->
+<a href="https://wa.me/27835139115?text=Hi%20Mthanti%20Tech!%20I%20want%20to%20explore%20your%20services." target="_blank" class="btn" style="background-color: #25D366; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none;">
+  💬 Explore Services on WhatsApp
+</a>
+
+  </div>
+</section>
+
+
+ <!--  <section id="about" class="about">
+    <h2>About Us</h2>
+<section class="about-us-section">
+    <h2>About Us</h2>
+    <p>
+      Mthanti Tech Solutions is more than just a technology firm; we are your strategic partne
+      r in business growth. Founded in South Africa, our mission is to empower local businesses—from
+      ambitious startups to established enterprises—by providing the digital tools and foundational 
+      support they need to thrive in a competitive market.We believe that success is built on two pillars:
+      innovative technology and a solid, compliant business structure. This dual focus is what sets us apart.
+      On the technology front, we specialize in IT consulting, software development, and cloud integration. Our
+      team of experts works closely with clients to deliver bespoke digital solutions that streamline operations,
+      enhance security, and enable confident scalability. We transform complex technological challenges into clear,
+      actionable strategies, ensuring your business is always one step ahead.But we know that a great idea needs a
+      strong foundation to take off. That’s why we also offer a comprehensive suite of business registration and 
+      compliance services. We simplify the often-complex process of company registration with CIPC, business name 
+      reservation, and domain setup. We guide entrepreneurs through critical administrative steps, including UIF,
+      Compensation Fund registration, and B-BBEE certificate assistance, ensuring your business is compliant from day one.
+      At Mthanti Tech Solutions, we are dedicated to helping you launch, grow, and succeed. We are committed to building
+      long-term relationships with our clients, providing the expertise and support you need every step of the way. 
+      Your success is our ultimate goal, and we are here to help you build a business that is not only technologically
+      advanced but also professionally sound.
+    </p>
+  </section> -->
+<!-- About Section -->
+<section id="about" class="about-section">
+  <h2 class="about-title">About Us</h2>
+ <div class="about-content-wrapper">
+  <div class="about-image">
+    <img src="Gemini_Generated_Image_4ozs544ozs544ozs (1).png" alt="About Us Image">
+  </div>
+  <div class="about-text">
+    
+ <!-- <div class="about-content-wrapper">
+    <div class="about-text">
+      <div class="about-image">
+      <img src="Gemini_Generated_Image_4ozs544ozs544ozs (1).png" alt="A relevant image for the about us section">
+    </div>
+      <h2 class="about-title">About Us</h2>  -->
+      
+      <p>
+        Mthanti Tech Solutions is more than just a technology firm; we are your strategic partner in business growth.
+        Founded in South Africa, our mission is to empower local businesses—from ambitious startups to established enterprises—by 
+        providing the digital tools and foundational support they need to thrive in a competitive market. We believe that success 
+        is built on two pillars: innovative technology and a solid, compliant business structure. This dual focus is what sets us apart.
+        On the technology front, we specialize in IT consulting, software development, and cloud integration. Our team of experts works 
+        closely with clients to deliver bespoke digital solutions that streamline operations, enhance security, and enable confident
+        scalability. We transform complex technological challenges into clear, actionable strategies, ensuring your business is always 
+        one step ahead. But we know that a great idea needs a strong foundation to take off.  That’s why we also offer a comprehensive
+        suite of business registration and compliance services. We simplify the often-complex process of company registration with CIPC,
+        business name reservation, and domain setup. We guide entrepreneurs through critical administrative steps, including UIF, Compensation
+        Fund registration, and B-BBEE certificate assistance, ensuring your business is compliant from day one. At Mthanti Tech Solutions, 
+        we are dedicated to helping you launch, grow, and succeed. We are committed to building long-term relationships with our clients,
+        providing the expertise and support you need every step of the way. Your success is our ultimate goal, and we are here to help you
+        build a business that is not only technologically advanced but also professionally sound.
+      </p>
+    </div>
+
+    
+  </div>
+    
+<!-- Earntrepreneurship Section -->
+<section id="earntrepreneurship" class="earntrepreneurship-section">
+  <div class="earntrepreneurship-container">
+    <h2 class="earntrepreneurship-title">Empowering Earntrepreneurs</h2>
+    <p class="earntrepreneurship-intro">
+      At Mthanti Tech Solutions, we help South African entrepreneurs turn hustle into digital success. Whether you're freelancing, side-hustling, or building a small business — we've got your back.
+    </p>
+
+    <div class="earntrepreneurship-boxes">
+      <div class="earntrepreneurship-card">
+        <h3>💼 Who We Serve</h3>
+        <ul>
+          <li>Solo founders and small team leaders</li>
+          <li>Freelancers and creatives</li>
+          <li>Startup founders and side gig builders</li>
+        </ul>
+      </div>
+
+      <div class="earntrepreneurship-card">
+        <h3>🚀 What We Offer</h3>
+        <ul>
+          <li>One-page websites & landing pages</li>
+          <li>Visual branding kits (logos, colors, templates)</li>
+          <li>Business registration & admin setup</li>
+          <li>WhatsApp integration & contact forms</li>
+        </ul>
+      </div>
+
+      <div class="earntrepreneurship-card">
+        <h3>🌍 Why Mthanti Tech</h3>
+        <ul>
+          <li>Locally digitally driven</li>
+          <li>Relevant & relatable</li>
+          <li>Affordable & accessible</li>
+          <li>Actionable, useful and practical</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+</section>
+
+<!-- <section id="services" class="services">
+  <h2>Our Services</h2>
+   <h3>Start Smart. Stay Compliant. Grow Confidently.</h3> -->
+
+   <section id="services" class="services">
+     <h2 class="services-title">Our Services</h2>
+     <h3 class="services-subtitle">Start Smart. Stay Compliant. Grow Confidently.</h3>
+      <div class="service-content-wrapper">
+       <div class="service-image">
+         <p>
+  At Mthanti Tech Solutions, we simplify the startup journey for South African entrepreneurs
+  by offering a full suite of business registration and compliance services. From securing your 
+  company name and registering with CIPC, to setting up your domain and guiding you through tax 
+  and UIF processes—we’re here to help you launch with confidence and stay compliant. Whether 
+  you're starting fresh or formalizing an existing venture, our expert support ensures your business
+  is built on a solid foundation.
+</p>
+         
+        <img src="our_services.png" alt="Business Services Overview" class="services-img" />
+         
+
+
+
+ <!-- <img src="our_services.png" alt="Business Services Overview" class="services-img" /> -->
+
+<!--  <ul>
+    <li>Company registration via CIPC or BizPortal</li>
+    <li>Business name reservation</li>
+    <li>Tax registration with SARS</li>
+    <li>B-BBEE certificate assistance</li>
+    <li>UIF and Compensation Fund registration</li>
+    <li>Domain name setup (.co.za)</li>
+    <li>Business bank account setup guidance</li>
+  </ul>-->
+</section>
+
+     <!--    <section id="contact" class="contact">
+  <h2 class="contact-title">Contact Us</h2>
+
+  <form id="contactForm">
+    <input type="text" placeholder="Your Name" required />
+    <input type="email" placeholder="Your Email" required />
+    <textarea placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+
+  <p>Email: info@mthantitechsolutions.co.za</p>
+  <p>Phone: +27 72 825 9322</p>
+</section> -->
+         
+<!-- Right: Embedded Map -->
+         <section id="contact" class="contact-section">
+  <h2 class="contact-title">Contact Us</h2>
+
+  <div class="contact-wrapper">
+    <!-- Left: Contact Form -->
+    <div class="contact-form">
+      <form id="contactForm">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <p>Email: info@mthantitechsolutions.co.za</p>
+      <p>Phone: +27 72 825 9322</p>
+    </div>
+
+    <!-- Right: Embedded Map -->
+    <div class="contact-map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13769.996992253387!2d28.080603590962454!3d-26.117250311869768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950d26fc32d737%3A0x69b73b780ae2911e!2sMthanti%20web%20design!5e1!3m2!1sen!2sza!4v1758634528857!5m2!1sen!2sza"
+        width="100%"
+        height="300"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<!--
+  <section id="contact" class="contact">
+    <h2 style="text-align: center; display: block; margin: 0 auto; border-bottom: 3px solid red; width: fit-content;">Contact Us</h2>
+
+    <h2 class="contact-title">Contact Us</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p>Email: info@mthantitechsolutions.co.za</p>
+    <p>Phone: +27 72 825 9322</p>
+  </section> -->
+
+  <footer>
+    <p>&copy; 2025 Mthanti Tech Solutions. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <div id="chatbot-container">
+    <div id="chat-toggle" onclick="toggleChat()">💬</div>
+    <div id="chatbox" style="display: none;">
+        <div id="chat-header">Mthanti Tech Solutions</div>
+        <div id="chat-messages"></div>
+        <input type="text" id="chat-input" placeholder="Type a number or ENDCHAT..." onkeydown="handleInput(event)">
+    </div>
+</div>
+</body>
+</html>
