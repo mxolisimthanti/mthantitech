@@ -1,0 +1,823 @@
+/* ======================== */
+/* ===== General Styles ===== */
+/* ======================== */
+.site-header {
+  background-color: #ffffff;
+  padding: 20px 40px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*.main-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Align menu and icons to the right 
+} */
+.main-nav {
+  display: flex;
+  justify-content: center; /* Center menu horizontally */
+  align-items: center;
+  flex: 1; /* Allow it to grow and take space */
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 85px;
+  margin: 0;
+  padding: 0;
+}
+.menu li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 54px;
+  padding: 8px 12px;
+  letter-spacing: 1px;
+  font-family: 'Montserrat', sans-serif;
+  transition: color 0.3s ease;
+}
+
+
+.menu li a:hover {
+  color: #0077b6;
+}
+
+.social-icons {
+  display: flex;
+  gap: 30px;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  color: #333;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.icon:hover {
+  background-color: #0077b6;
+  color: #fff;
+}
+
+.facebook { background-color: #3b5998; color: white; }
+.instagram { background-color: #e1306c; color: white; }
+.youtube { background-color: #ff0000; color: white; }
+.github { background-color: #333; color: white; }
+
+
+section {
+  padding: 60px 20px;
+  max-width: 1130px;
+  margin: auto;
+}
+
+.btn {
+  background-color: #ffffff;
+  color: #003399;
+  padding: 12px 24px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #e0e0e0;
+}
+
+/* ======================== */
+/* ===== Header & Nav ===== */
+/* ======================== */
+header {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 150px;
+  margin-right: 10px;
+  width: auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #0073e6;
+  font-weight: bold;
+}
+/* Desktop Nav */
+.desktop-nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px;
+}
+
+.desktop-nav .menu {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.desktop-nav .menu li a {
+  text-decoration: none;
+  color: #0073e6;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 4px 8px;
+}
+
+/* Mobile Nav Hidden by Default */
+.mobile-nav {
+  display: none;
+}
+
+.mobile-nav.show {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.mobile-menu {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.mobile-menu li a {
+  text-decoration: none;
+  color: #0073e6;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px 20px;
+}
+.facebook { background-color: #3b5998; color: white; }
+.instagram { background-color: #e1306c; color: white; }
+.youtube { background-color: #ff0000; color: white; }
+.tiktok { background-color: #000; color: white; }
+
+/* Hamburger Hidden on Desktop */
+.hamburger {
+  display: none;
+}
+
+/* Responsive Rules */
+@media (max-width: 768px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+@media (min-width: 769px) {
+  .mobile-nav {
+    display: none !important;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
+
+
+
+/* ======================== */
+/* ===== Hero Section ===== */
+/* ======================== */
+.hero-video {
+  position: relative;
+  height: 50vh;
+  overflow: hidden;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -2;
+}
+
+.video-background iframe {
+  width: 100vw;
+  height: 56.25vw;
+  min-height: 100vh;
+  min-width: 177.77vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 51, 153, 0.6);
+  z-index: -1;
+}
+
+.hero-content {
+  z-index: 1;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+/* ======================== */
+/* ===== Landing Section ===== */
+/* ======================== */
+.landing {
+  background-color: #0073e6;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.landing .btn {
+  background-color: white;
+  color: #0073e6;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+/* ======================== */
+/* ===== About Us Section ===== */
+/* ======================== */
+
+.about-section {
+  padding: 60px 20px;
+  background-color: #ffffff;
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+  text-align: center;
+}
+
+.about-title {
+  text-align: center;
+  font-size: 2.2em;
+  color: #002b5c;
+  font-weight: 700;
+  margin-bottom: 30px;
+  border-bottom: 3px solid #e60000; /* Optional: red underline for branding */
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.about {
+  padding: 40px 20px;
+}
+
+.about-content-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/* Paragraph container */
+.about-text {
+  width: 55%;
+  text-align: left;
+   height: auto;
+}
+
+/* Image container */
+.about-image {
+  width: 45%;
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .about-content-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-text,
+  .about-image {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Horizontal Earntrepreneur Cards */
+/* ======================== */
+/* ===== Earntreprenuership section ===== */
+/* ======================== */
+.earntrepreneur-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.earntrepreneur-card {
+  flex: 1 1 300px;
+  background-color: #f2f6fa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.earntrepreneur-card:hover {
+  transform: translateY(-5px);
+}
+
+.earntrepreneur-card h3 {
+  color: #0077cc;
+  margin-bottom: 12px;
+  font-size: 1.2em;
+}
+
+.earntrepreneur-card ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Earntrepreneurship Section */
+.earntrepreneurship-section {
+  padding: 60px 20px;
+  background-color: #ffffff;
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+}
+
+.earntrepreneurship-container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.earntrepreneurship-title {
+  text-align: center;
+  font-size: 2.2em;
+  color: #002b5c;
+  font-weight: 700;
+  margin-bottom: 10px;
+  border-bottom: 3px solid #e60000; /* Optional: red underline for branding */
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.earntrepreneurship-intro {
+  text-align: center;
+  font-size: 1.1em;
+  color: #444;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.earntrepreneurship-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.earntrepreneurship-card {
+  flex: 1 1 300px;
+  background-color: #f2f6fa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.earntrepreneurship-card:hover {
+  transform: translateY(-5px);
+}
+
+.earntrepreneurship-card h3 {
+  color: #0077cc;
+  margin-bottom: 12px;
+  font-size: 1.2em;
+}
+
+.earntrepreneurship-card ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ======================== */
+/* ===== Services Section ===== */
+/* ======================== */
+
+.services {
+  padding: 60px 20px;
+  background-color: #ffffff;
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+}
+
+/* Section Title (h2) */
+.services-title {
+  text-align: center;
+  font-size: 2.4em;
+  color: #002b5c;                   /* Deep blue for trust and tech */
+  font-weight: 700;
+  margin-bottom: 10px;
+  border-bottom: 3px solid #e60000; /* Optional: red underline for branding */
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block; /* Ensures full-width block for centering */
+  width: fit-content; /* Keeps underline tight to text */
+}
+
+/* Subheading (h3) */
+.services-subtitle {
+  text-align: center;
+  font-size: 1.4em;
+  color: #444444;
+  font-weight: 500;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block; /* Ensures full-width block for centering */
+  width: fit-content; /* Keeps underline tight to text */
+}
+
+
+/* Content Wrapper */
+.service-content-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/* Image Container */
+.service-image {
+  width: 100%;
+}
+
+.services-img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Paragraph Styling */
+.service-image p {
+  font-size: 1.05em;
+  line-height: 1.6;
+  color: #333333;
+  font-weight: 400;
+  margin-top: 20px;
+  text-align: left;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .service-content-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-image {
+    width: 100%;
+    text-align: center;
+  }
+
+  .services-title {
+    font-size: 2em;
+  }
+
+  .service-image p {
+    text-align: center;
+  }
+}
+
+
+/* ======================== */
+/* ===== Contact Section ===== */
+/* ======================== */
+
+/* Contact Section */
+.contact-section {
+  padding: 60px 20px;
+  background-color: #ffffff;
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+}
+
+/* Title */
+.contact-title {
+  text-align: center;
+  font-size: 2.4em;
+  color: #002b5c;
+  font-weight: 700;
+  margin-bottom: 30px;
+  border-bottom: 3px solid #e60000;
+  padding-bottom: 5px;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+}
+
+/* Wrapper: Split into two columns */
+.contact-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Left: Form */
+.contact-form {
+  width: 50%;
+}
+
+#contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#contactForm input,
+#contactForm textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1em;
+  font-family: inherit;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#contactForm button {
+  background-color: #0073e6;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#contactForm button:hover {
+  background-color: #005bb5;
+}
+
+/* Right: Map */
+.contact-map {
+  width: 50%;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .contact-wrapper {
+    flex-direction: column;
+  }
+
+  .contact-form,
+  .contact-map {
+    width: 100%;
+  }
+
+  iframe {
+    height: 250px;
+  }
+}
+
+
+/* ======================== */
+/* ===== Chatbot ===== */
+/* ======================== */
+#chatbot-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+#chat-toggle {
+  width: 60px;
+  height: 60px;
+  background-color: #007bff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#chatbox {
+  width: 300px;
+  height: 400px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  display: none;
+  flex-direction: column;
+  overflow: hidden;
+  position: absolute;
+  bottom: 80px;
+  right: 0;
+}
+
+#chat-header {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#chat-messages {
+  flex-grow: 1;
+  padding: 10px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#chat-input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  border: none;
+  border-top: 1px solid #ccc;
+  outline: none;
+}
+
+/* ======================== */
+/* ===== Footer ===== */
+/* ======================== */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #eee;
+}
+
+/* ======================== */
+/* ===== Media Queries ===== */
+/* ======================== */
+@media (max-width: 768px) {
+  .about-content-wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-video {
+    height: 60vh;
+  }
+
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-content p {
+    font-size: 0.95rem;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  nav a {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Navigation */
+  .nav-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .menu li a {
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  /* Hero Section */
+  .hero-video {
+    height: auto;
+    padding: 40px 20px;
+    flex-direction: column;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  /* General Button */
+  .btn {
+    font-size: 1rem;
+    padding: 10px 16px;
+  }
+
+  /* Logo */
+  .logo img {
+    height: 80px;
+  }
+
+  /* Social Icons */
+  .social-icons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .icon {
+    width: 24px;
+    height: 24px;
+    font-size: 12px;
+  }
+}
+
